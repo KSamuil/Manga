@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% include 'manga/header.html' %}
 {% for i in post_key %}
 {{ i.title}}
 <br>
@@ -14,5 +8,4 @@
 <br>
 {{i.created_at}}
 {% endfor %}
-</body>
-</html>
+{% include 'manga/footer.html' %}

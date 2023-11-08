@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'blog',
     'manga_shops',
     'parser_app',
+    'custom_users',
 ]
 
 MIDDLEWARE = [

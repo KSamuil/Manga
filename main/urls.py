@@ -9,5 +9,6 @@ urlpatterns = ([
     path('', include('blog.urls')),
     path('', include('manga_shops.urls')),
     path('', include('parser_app.urls')),
+    path('', include('custom_users.urls')),
 ]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\
                +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))

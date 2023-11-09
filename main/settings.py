@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'manga_shops',
     'parser_app',
     'custom_users',
+    'hashtags',
 ]
 
 MIDDLEWARE = [

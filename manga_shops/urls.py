@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+path('', views.MangaListView.as_view(), name='mangaList'),
     path('manga_list/', views.MangaListView.as_view(), name='mangaList'),
     path('manga_detail/<int:id>/', views.MangaDetailView.as_view(), name='detail'),
     path('manga_detail/<int:id>/delete/',

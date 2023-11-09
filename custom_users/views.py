@@ -6,6 +6,7 @@ from django.views.generic import CreateView, ListView
 from django.urls import reverse_lazy
 from . import forms
 
+
 class AuthLogogutView(LogoutView):
     next_page = reverse_lazy('users:home')
 
@@ -22,7 +23,6 @@ class AuthLoginView(LoginView):
 
     def get_success_url(self):
         return reverse('users:post')
-
 
 class UserListView(ListView):
     queryset = User.objects.all()
